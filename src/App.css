@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+.container{
+  display: flex;
+  flex-direction: row;
+}
+.contInner{
+  display: flex;
+  flex-direction: column;
+}
+.btn-envoie{
+  background-color:#ff4500;
+  color: white;
+  font-size: 20px;
+  border: 1px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
