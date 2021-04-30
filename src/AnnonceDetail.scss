@@ -1,0 +1,60 @@
+.annonce1{
+  
+}
+
+.ul,li,a{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: rgb(43, 40, 26);
+}
+
+  .circle {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    right: 10%;
+    background: orangered;
+    border-radius: 50%;
+    z-index: -1;
+    animation: circleAnim 15s infinite alternate;
+
+    @keyframes circleAnim {
+      50% {
+        transform: scale(0.7);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    @media screen and (max-width: 630px){
+      display: none;
+    }
+  }
+
+  .circle2 {
+    position: absolute;
+    height: 900px;
+    right: 10%;
+    width: 900px;
+    background: orangered;
+    border-radius: 50%;
+    z-index: -1;
+    animation: circleAnim 20s infinite alternate;
+
+    @keyframes circleAnim {
+      50% {
+        transform: scale(0.7);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    @media screen and (max-width: 630px){
+      display: none;
+    }
+  }
+
+  

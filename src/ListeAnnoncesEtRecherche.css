@@ -1,0 +1,208 @@
+.NavBar {
+    display: flex;
+    z-index: 9999;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 1px 1px 6px orangered;
+    top: 0;
+}
+
+a { text-decoration: none; color: inherit }
+a:hover { color: orangered; }
+.color-primary { color :orangered; }
+.color-white { color: white; }
+.text-center { text-align: center;}
+
+.d-flex {
+    display: flex;
+}
+.flex-col { flex-direction: column ;}
+
+.ListeAnnonces__Page {
+    background-color: white;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+.ant-pagination-item {
+    padding: 0.125rem 7px;
+    background: white;
+    border-radius: 5px;
+    margin: 0px 6px;
+    border: 1px solid;
+    font-size: 13px;
+    border-color: rgba(0,0,0,0.5);
+}
+
+.ant-pagination-item-active {
+    color: blue;
+    border-color: rgba(20,20,255,0.5);
+    background-color: rgba(22, 22, 255, 0.15);
+    font-weight: 700;
+}
+
+.Category {
+    /* background-color: rgba(255, 68, 0, 0.15); */
+    color: orangered;
+    /* padding: 5px 20px; */
+    margin: 30px 0;
+    /* border-radius: 25px; */
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.loader svg {
+    stroke: orangered;
+    fill: orangered
+}
+
+.ListeAnnonces__Search {
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 50px;
+    border-radius: 35px;
+    box-shadow: 0px 0px 4px orangered;
+}
+
+.ListeAnnonces__Search #input {
+    outline: none !important;
+    /* border: none; */
+    padding-left: 65px !important;
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid;
+    border-color: gray;
+    font-size: 16px;
+    width: 100%;
+}
+
+#input:focus-within {
+    border-color: orangered;
+}
+
+.ListeAnnonces__Search .searchIcon {
+    /* padding: 0 15px; */
+    transform: translate(55px);
+    margin-left: -35px;
+}
+
+.searchIcon{
+    color: orangered;
+}
+
+.Container {
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-right: auto ;
+    margin-left: auto;
+    display: block;
+    box-sizing: border-box;
+  }
+
+.Annonce__Card {
+    max-width: 800px;
+    display: flex;
+    justify-content: start;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px orangered;
+    background-color: white;
+    margin: 25px 0;
+}
+
+.Filter_Search {
+    padding-top: 25px;
+}
+
+.Annonce__Card > img {
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.search_filter {
+    margin-left: 15px;
+}
+
+.Annonce__Card__Details {
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.justify-content-center { justify-content: center; }
+
+.align-items-center { align-items: center; }
+
+.padding-top {
+    padding-top: 100px;
+}
+
+.NavBar__Logo {
+    font-size: 20px;
+    font-weight: 700 !important;
+}
+
+.NavBar__Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+
+.NavBar__Logo {
+    display: flex;
+    align-items: center;
+}
+
+.NavBar__Container__List {
+    display: flex;
+    align-items: center;
+}
+
+.NavBar__Container__List .NavBar__List {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    list-style: none;
+}
+
+.NavBar__List li {
+    padding: 10px 25px;
+    font-size: 14.5px;
+    font-weight: 500;
+}
+
+.NavBar__List li a {
+    color: black;
+    text-decoration: none;
+}
+
+.NavBar__List li a.active {
+    font-weight: 700;
+    font-size: 15px;
+    color: red !important;
+}
+
+.NavBar__List li a:hover {
+    color: rgb(44, 39, 39);
+    transition: all 0.15s;
+    font-size: 15.5px;
+}
+
+.searchAnnBtn {
+    background-color: orangered;
+    color: #fff;
+    padding: 15px 40px;
+    font-family: inherit;
+    margin: 15px 0 0 0;
+    border: none;
+    width: fit-content;
+    border-radius: 10px;
+}
