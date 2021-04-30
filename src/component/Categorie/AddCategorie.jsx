@@ -1,3 +1,4 @@
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Component } from 'react'
 import { Redirect } from 'react-router';
@@ -24,10 +25,19 @@ class AddCategorie extends Component {
         })
     }
     handleSubmit = event => {
+        const category = this.state.category
+        axios.post('http://134.122.24.165:5000/category/addcategory', category)
+            .then(res => {
+                this.setState({
+                    isRedirect : true
+                })
+            }).catch(error => {
+                console.log(error);
+            })
         event.preventDefault()
     }
     render() {
-        if (this.isRedirect) {
+        if (this.state.isRedirect) {
             return <Redirect to="/admin/categorie" />
         }
         return (
