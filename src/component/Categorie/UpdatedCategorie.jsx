@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Component } from 'react'
 import { Redirect } from 'react-router';
-class AddCategorie extends Component {
+class UpdatedCategorie extends Component {
 
     constructor(props) {
         super(props);
@@ -12,10 +12,14 @@ class AddCategorie extends Component {
                 createdAt: '',
                 updatedAt: ''
             },
-            isRedirect: false
+            isRedirect: false,
+            id: this.props.match.params.id
         }
     }
-
+    componentDidMount() {
+        const id = this.state.id
+        
+    }
     handleChange = event => {
         let categoryTemp = this.state.category
         categoryTemp[event.target.name] = event.target.value
@@ -24,6 +28,8 @@ class AddCategorie extends Component {
         })
     }
     handleSubmit = event => {
+        let category = this.state.category
+
         event.preventDefault()
     }
     render() {
@@ -32,7 +38,7 @@ class AddCategorie extends Component {
         }
         return (
             <div>
-                <h1 className="text-center mx-4">Creaction d'une categorie</h1>
+                <h1 className="text-center mb-4">Modification de la categorie {this.state.category.name}</h1>
                 <form className="m-auto col-4" onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="name">Nom</label>
@@ -42,10 +48,10 @@ class AddCategorie extends Component {
                         <label htmlFor="description">Description</label>
                         <textarea className="form-control" required value={this.state.category.description} onChange={this.handleChange} name="description" id="description" rows="4"></textarea>
                     </div>
-                    <button type="submit" className="btn btn-primary">Ajouter</button>
+                    <button type="submit" className="btn btn-primary">Modifier</button>
                 </form>
             </div>
         )
     }
 }
-export default AddCategorie;
+export default UpdatedCategorie;
