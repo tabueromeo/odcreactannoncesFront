@@ -1,18 +1,19 @@
 
-import App from "../App"
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from "../component/Home"
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import SimpleUserList from '../component/SimpleUserList';
+import SimpleUserEdit from '../component/SimpleUserEdit';
 
 function Main(){
-    return  <BrowserRouter>
+    return (<Router>
         <Switch>
-         
-        <Route exact path="/">
-          <App/>
-          </Route>
+        <Route path='/' exact={true} component={Home}/>
+        <Route path='/simpleusers/:id' component={SimpleUserEdit}/>
+        <Route path='/simpleusers' exact={true} component={SimpleUserList}/>          
          
         </Switch>
-      </BrowserRouter>
-    
+      </Router>
+    )
 }
 
 export default Main
