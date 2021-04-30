@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Signup from './component/users/signup'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
