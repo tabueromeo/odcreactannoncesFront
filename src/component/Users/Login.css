@@ -1,0 +1,28 @@
+/* .login{
+
+    
+    /* margin-top: 210px; */
+    /* margin-bottom: 500px; */
+    /* margin-left: 500; */
+/* margin-right:500px;  */
+    /* padding-left: 500; */
+/* }  */
+.login{
+ 
+}
+.container{
+    
+    padding-left: 500px;
+    margin-top: 250px;
+    border: orange;
+
+    
+}
+.h3{
+    padding-left: 80px;
+}
+.button{
+    width:200;
+border-radius: 10px   
+
+}
