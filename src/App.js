@@ -1,8 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
-//import Login from './component/Users/Login';
-import Adduser from './component/Users/Adduser';
-
+import Signup from './component/users/signup'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
